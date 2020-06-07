@@ -34,7 +34,7 @@ export default class App extends Component {
         <SafeAreaView style={styles.container}>
           <Text style={styles.titulo}>Feliz Aniversário, Isabela!</Text>
           <Text style={styles.subtitulo}>{"\n"}
-            O Colégio Lumen deseja que esse dia especial seja repleto de alegrias.
+            Desejamos que esse dia especial seja repleto de alegrias.
             Muita saúde, felicidades e realizações!
       </Text>
           <Lottie resizeMode="contain" autoSize source={bday} autoPlay loop></Lottie>
@@ -51,14 +51,6 @@ export default class App extends Component {
               Ir para a Página Inicial
             </Text>
           </TouchableOpacity>
-          <View style={[styles.input, styles.select]}>
-            <Picker style={styles.picker} selectedValue={this.state.tipo}
-              onValueChange={this.onValueChange.bind(this)}>
-              <Picker.Item label="Aluno" value="1" />
-              <Picker.Item label="Responsável" value="2" />
-              <Picker.Item label="Professor" value="3" />
-            </Picker>
-          </View>
         </SafeAreaView>
     )
   }
