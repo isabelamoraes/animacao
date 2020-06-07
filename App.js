@@ -51,6 +51,14 @@ export default class App extends Component {
               Ir para a Página Inicial
             </Text>
           </TouchableOpacity>
+          <View style={[styles.input, styles.select]}>
+            <Picker style={styles.picker} selectedValue={this.state.tipo}
+              onValueChange={this.onValueChange.bind(this)}>
+              <Picker.Item label="Aluno" value="1" />
+              <Picker.Item label="Responsável" value="2" />
+              <Picker.Item label="Professor" value="3" />
+            </Picker>
+          </View>
         </SafeAreaView>
     )
   }
